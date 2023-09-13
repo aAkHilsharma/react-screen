@@ -17,7 +17,8 @@ const SidebarFooter = () => {
 
         <div>
           <p className="font-bold text-sm">
-            spehre.io <span className="text-xs font-normal">&copy; 2023</span>
+            <span className="text-[#7569f8]">spehre.io</span>{" "}
+            <span className="text-xs font-normal">&copy; 2023</span>
           </p>
         </div>
       </div>

@@ -1,4 +1,8 @@
-import { BiSolidDashboard } from "react-icons/bi";
+import { SiWindows } from "react-icons/si";
+import { FcInvite } from "react-icons/fc";
+import { DiGoogleAnalytics } from "react-icons/di";
+import { BiSolidUser } from "react-icons/bi";
+import { BsBrowserChrome } from "react-icons/bs";
 import { useMemo } from "react";
 import SidebarNavigation from "./SidebarNavigation";
 import SidebarFeed from "./SidebarFeed";
@@ -9,31 +13,31 @@ const Sidebar = ({ children }) => {
   const routes = useMemo(
     () => [
       {
-        icon: BiSolidDashboard,
+        icon: SiWindows,
         label: "Home",
         active: pathname === "/",
         href: "/",
       },
       {
-        icon: BiSolidDashboard,
+        icon: FcInvite,
         label: "Job Invites",
         active: pathname === "/invites",
         href: "/search",
       },
       {
-        icon: BiSolidDashboard,
+        icon: DiGoogleAnalytics,
         label: "Analytics",
         active: pathname === "/analytics",
         href: "/search",
       },
       {
-        icon: BiSolidDashboard,
+        icon: BiSolidUser,
         label: "My Profile",
         active: pathname === "/me",
         href: "/search",
       },
       {
-        icon: BiSolidDashboard,
+        icon: BsBrowserChrome,
         label: "Explore",
         active: pathname === "/explore",
         href: "/search",
